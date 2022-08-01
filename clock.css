@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'digital-7';
+    src: url('digital-7.woff2') format('woff2'),
+        url('digital-7.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.clock {
+    width: 15rem;
+    background-color: #141313;
+    border: 2px solid #7c7ce8;
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    padding: 1rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.time {
+    color: #ffffff;
+    font-family: 'digital-7', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.date {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    color: #f0f8ff;
+}
