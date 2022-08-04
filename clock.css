@@ -11,7 +11,7 @@
     font-size: 16px;
 }
 
-.clock {
+.digital-clock {
     width: 15rem;
     background-color: #141313;
     border: 2px solid #7c7ce8;
@@ -36,3 +36,80 @@
     font-size: 0.8rem;
     color: #f0f8ff;
 }
+
+
+/* Analog clock styling */
+
+.analog-clock {
+    width: 15rem;
+    height: 15rem;
+    background-color: #141313;
+    border: 0.3rem solid #7c7ce8;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5rem auto;
+    padding: 1rem;
+    position: relative;
+}
+
+.line1 {
+    border-left: 2px solid #7c7ce8;
+    height: 13rem;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+
+.line2 {
+    border-top: 2px solid #7c7ce8;
+    width: 13rem;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.inner-circle {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    background-color: #141313;
+    position: absolute;
+    top: 12%;
+    left: 12%;
+}
+
+.hour {
+    border-left: 3px solid #ffffff;
+    height: 2.5rem;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+}
+
+.minute {
+    border-left: 2px solid #fc8585;
+    height: 3.5rem;
+    top: 14%;
+}
+
+.second {
+    border-left: 2px solid #ec3333;
+    height: 4.5rem;
+    top: 5%;
+}
+
+.hand {
+    border-radius: 0.3rem;
+    position: absolute;
+    left: 50%;
+}
+
+.mid-point {
+    border-left: 0.2rem solid #7c7ce8;
+    border-radius: 0.3rem;
+    height: 0.2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}      

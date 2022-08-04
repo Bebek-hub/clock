@@ -96,3 +96,29 @@ function digitalClock() {
 
 }
 digitalClock();
+
+// Analog clock functionalities
+
+const getHour = document.querySelector('.hour')
+const getMinute = document.querySelector('.minute')
+const getSecond = document.querySelector('.second')
+
+function analogClock() {
+    let time = new Date();
+    let hr = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+
+    const secdeg = ((360 * sec)/ 60);
+    getSecond.style.transform = `rotate(${secdeg}deg)`;
+
+    const mindeg = ((360 * min)/ 60) + ((6 * min)/ 60);
+    getMinute.style.transform = `rotate(${mindeg}deg)`;
+
+    const hrdeg = ((360 * hr)/ 12) + ((30 * hr)/ 60);
+    getHour.style.transform = `rotate(${hrdeg}deg)`;
+
+
+    setTimeout(analogClock, 1000);
+}
+analogClock()
