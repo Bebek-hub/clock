@@ -28,65 +28,63 @@ function digitalClock() {
     let currentTime = hour + ":" + minute + ":" + second + " " + period;
     presentTime.textContent = currentTime;
 
-    setTimeout(digitalClock, 1000);
-
     // Date format
 
-    if (day === 0) {
+    if (parseInt(day) === 0) {
         day = "Sunday"
-    } else if (day === 1) {
+    } else if (parseInt(day) === 1) {
         day = "Monday"
-    } else if (day === 2) {
+    } else if (parseInt(day) === 2) {
         day = "Tuesday"
-    } else if (day === 3) {
+    } else if (parseInt(day) === 3) {
         day = "Wednesday"
-    } else if (day === 4) {
+    } else if (parseInt(day) === 4) {
         day = "Thursday"
-    } else if (day === 5) {
+    } else if (parseInt(day) === 5) {
         day = "Friday"
-    } else if (day === 6) {
+    } else if (parseInt(day) === 6) {
         day = "Saturday"
     }
 
-    if (date === 1) {
+    if (parseInt(date) === 1) {
         date += "st"
-    } else if (date === 2) {
+    } else if (parseInt(date) === 2) {
         date += "nd"
-    } else if (date === 3) {
+    } else if (parseInt(date) === 3) {
         date += "rd"
-    } else if (date === 21) {
+    } else if (parseInt(date) === 21) {
         date += "st"
-    } else if (date === 22) {
+    } else if (parseInt(date) === 22) {
         date += "nd"
-    } else if (date === 23) {
+    } else if (parseInt(date) === 23) {
         date += "rd"
-    } else if (date === 31) {
+    } else if (parseInt(date) === 31) {
         date += "st"
     } else {date += "th"}
 
-    if (month === 0) {
+    if (parseInt(month) === 0) {
         month = "January"
-    } else if (month === 1) {
+    } else if (parseInt(month) === 1) {
         month = "February"
-    } else if (month === 2) {
+    } else if (parseInt(month) === 2) {
         month = "March"
-    } else if (month === 3) {
+    } else if (parseInt(month) === 3) {
         month = "April"
-    } else if (month === 4) {
+    } else if (parseInt(month) === 4) {
         month = "May"
-    } else if (month === 5) {
+    } else if (parseInt(month) === 5) {
         month = "June"
-    } else if (month === 6) {
+    } else if (parseInt(month) === 6) {
         month = "July"
-    } else if (month === 7) {
+    } else if (parseInt(month) === 7) {
         month = "August"
-    } else if (month === 8) {
+    } else if (parseInt(month) === 8) {
         month = "September"
-    } else if (month === 9) {
+    } else if (parseInt(month) === 9) {
         month = "October"
-    } else if (month === 10) {
+    } else if (parseInt(month) === 10) {
         month = "November"
-    } else if (month === 11) {
+    } else if (parseInt(month) === 11) {
         month = "December"
     } 
 
@@ -94,8 +92,11 @@ function digitalClock() {
     let currentDate = day + " " + date + "," + " " + month + " " + year
     presentDate.textContent = currentDate;
 
+    setTimeout(digitalClock, 1000);
 }
 digitalClock();
+
+
 
 // Analog clock functionalities
 
